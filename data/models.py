@@ -19,8 +19,8 @@ class Cocktail():
         print('=========')
         print(f'Making your {self.name}')
         if self.method == 'shaken':
-            for ingredient in self.ingredients:
-                print(f'Add {ingredient} to tin')
+            for ingredient, amount in self.ingredients.items():
+                print(f'Add {amount}ml of {ingredient} to tin')
             print('Add ice and shake until chilled')
         print(f'Pour into a {self.glass}')
         print(f'Garnish with a {self.garnish}')

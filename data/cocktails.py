@@ -2,12 +2,12 @@ from models import Cocktail
 
 margarita = Cocktail(
     'Margarita', 
-    [
-        {'Tequila': 50}, 
-        {'Lime': 25}, 
-        {'Sugar', 25},
-        {'Triple sec': 20}
-        ],
+    {
+        'Tequila': 50,
+        'Triple Sec': 20,
+        'Lime Juice': 20,
+        'Gomme': 10
+    },
     'Coupe',
     'Lime Wheel',
     'shaken', 
