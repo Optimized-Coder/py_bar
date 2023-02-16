@@ -3,6 +3,6 @@ from cocktails import *
 
 view_menu()
 
-margarita.make_cocktail()
+singapore_sling.make_cocktail()
 
 

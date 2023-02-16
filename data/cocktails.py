@@ -14,4 +14,22 @@ margarita = Cocktail(
     7.00
 )
 
-cocktail_list = [margarita]
+singapore_sling = Cocktail(
+    'Singapore Sling',
+    {
+        'Cointreau': 7.5,
+        'Lime juice': 15,
+        'Pineapple Juice': 120,
+        'Gin': 30,
+        'Grenadine': 10,
+        'Angustura bitters': 1,
+        'Cherry Liqueur': 15,
+        'DOM Benedictine': 7.5
+    },
+    'Sling',
+    'Cherry',
+    'shaken',
+    9.50
+)
+
+cocktail_list = [margarita, singapore_sling]
