@@ -24,5 +24,5 @@ class Cocktail():
             print('Add ice and shake until chilled')
         print(f'Pour into a {self.glass}')
         print(f'Garnish with a {self.garnish}')
-        print(f'Here is your {self.name}, that\'ll be £{self.price}')
+        print(f'Here is your {self.name}, that\'ll be £{self.price:.2f}')
         print('=========')
