@@ -1,12 +1,13 @@
 from models import Cocktail
+from ingredients import *
 
 margarita = Cocktail(
     'Margarita', 
     {
-        'Tequila': 50,
-        'Triple Sec': 20,
-        'Lime Juice': 20,
-        'Gomme': 10
+        tequila: 50,
+        triple_sec: 20,
+        lime_juice: 20,
+        gomme: 10
     },
     'Coupe',
     'Lime Wheel',

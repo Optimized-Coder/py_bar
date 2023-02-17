@@ -26,3 +26,30 @@ class Cocktail():
         print(f'Garnish with a {self.garnish}')
         print(f'Here is your {self.name}, that\'ll be £{self.price:.2f}')
         print('=========')
+    
+    def calculate_cost(self):
+        cost = 0
+        for ingredient, amount in self.ingredients.items():
+            cost += ingredient.price_per_unit * amount
+        return cost
+
+    def calculate_profit(self):
+        return self.price * 0.8 - self.calculate_cost()
+
+
+class Ingredient():
+    def __init__(self, name, price_each, unit, num_of_units):
+        self.name = name
+        # price per btl
+        self.price_each = price_each 
+        # unit
+        self.unit = unit
+        # number of ml
+        self.num_of_units = num_of_units
+
+        # price per ml
+        self.price_per_unit = self.price_each / self.num_of_units
+
+    def __repr__(self) -> str:
+        return f'{self.name}'
+
