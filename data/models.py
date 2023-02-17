@@ -1,12 +1,13 @@
+# Cocktail class 
+# Accepts name, ingredients dict with quantities, glass, garnish, method, price and a description
+cocktail_list = []
+
 class Cocktail():
+
+    
+
     def __init__(
-        self, 
-        name, 
-        ingredients, 
-        glass, 
-        garnish,
-        method,
-        price
+        self, name, ingredients, glass, garnish, method, price
         ):
         self.name = name
         self.ingredients = ingredients
@@ -14,6 +15,12 @@ class Cocktail():
         self.garnish = garnish
         self.method = method
         self.price = price
+    
+    def __repr__(self) -> str:
+        return self.name
+    
+    def append_cocktail(self):
+        cocktail_list.append(self)
     
     def make_cocktail(self):
         print('=========')
@@ -37,6 +44,10 @@ class Cocktail():
         return self.price * 0.8 - self.calculate_cost()
 
 
+# ingredients for each cocktail
+
+ingredient_list = []
+
 class Ingredient():
     def __init__(self, name, price_each, unit, num_of_units):
         self.name = name
@@ -50,6 +61,14 @@ class Ingredient():
         # price per ml
         self.price_per_unit = self.price_each / self.num_of_units
 
+    def append_ingredient(self):
+        ingredient_list.append(self)
+
     def __repr__(self) -> str:
         return f'{self.name}'
+
+class Spirit(Ingredient):
+    def __init__(self, name, price_each, unit, num_of_units, ABV):
+        super().__init__(name, price_each, unit, num_of_units)
+        self.ABV = ABV
 

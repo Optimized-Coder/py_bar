@@ -3,9 +3,9 @@ from cocktails import *
 
 view_menu()
 
-margarita.make_cocktail()
+# margarita.make_cocktail()
 
-print('=== Margarita ===')
-print(f'Cost: £{margarita.calculate_cost():.2f}')
-print(f'Profit: £{margarita.calculate_profit():.2f}')
+# print('=== Margarita ===')
+# print(f'Cost: £{margarita.calculate_cost():.2f}')
+# print(f'Profit: £{margarita.calculate_profit():.2f}')
 

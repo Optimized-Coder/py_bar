@@ -1,4 +1,4 @@
-from models import Cocktail
+from models import Cocktail, cocktail_list
 from ingredients import *
 
 margarita = Cocktail(
@@ -14,6 +14,8 @@ margarita = Cocktail(
     'shaken', 
     7.00
 )
+
+margarita.append_cocktail()
 
 singapore_sling = Cocktail(
     'Singapore Sling',
@@ -32,5 +34,9 @@ singapore_sling = Cocktail(
     'shaken',
     9.50
 )
+singapore_sling.append_cocktail()
 
-cocktail_list = [margarita, singapore_sling]
+
+
+
+
