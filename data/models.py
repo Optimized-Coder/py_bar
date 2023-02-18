@@ -29,7 +29,12 @@ class Cocktail():
             for ingredient, amount in self.ingredients.items():
                 print(f'Add {amount}ml {ingredient} to tin')
             print('Add ice and shake until chilled')
-        print(f'Pour into a {self.glass}')
+            print(f'Pour into a {self.glass}')
+        elif self.method == 'built':
+            for ingredient, amount in self.ingredients.items():
+                print(f'Add {amount}ml {ingredient} to {self.glass}')
+                print('Add crushed ice and churn')
+                print('Top with crushed ice')
         print(f'Garnish with a {self.garnish}')
         print(f'Here is your {self.name}, that\'ll be £{self.price:.2f}')
         print('=========')
@@ -42,6 +47,7 @@ class Cocktail():
 
     def calculate_profit(self):
         return self.price * 0.8 - self.calculate_cost()
+
 
 
 # ingredients for each cocktail

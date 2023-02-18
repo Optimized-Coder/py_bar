@@ -1,6 +1,20 @@
 from models import Cocktail, cocktail_list
 from ingredients import *
 
+
+# COCKTAIL MODEL
+
+# name, 
+# ingredients <dict>, 
+# glass,
+# garnish, 
+# method, 
+# price
+
+# USE Cocktail.append_cocktail()
+
+# ingreients are instances of Ingredient to add extra properties and functionaility
+
 margarita = Cocktail(
     'Margarita', 
     {
@@ -20,14 +34,14 @@ margarita.append_cocktail()
 singapore_sling = Cocktail(
     'Singapore Sling',
     {
-        'Cointreau': 7.5,
-        'Lime juice': 15,
-        'Pineapple Juice': 120,
-        'Gin': 30,
-        'Grenadine': 10,
-        'Angustura bitters': 1,
-        'Cherry Liqueur': 15,
-        'DOM Benedictine': 7.5
+        cointreau: 7.5,
+        lime_juice: 15,
+        pineapple_juice: 120,
+        gin: 30,
+        grenadine: 10,
+        angustura_bitters: 1,
+        cherry_liqueur: 15,
+        dom_benedictine: 7.5
     },
     'Sling',
     'Cherry',
@@ -35,6 +49,22 @@ singapore_sling = Cocktail(
     9.50
 )
 singapore_sling.append_cocktail()
+
+mojito = Cocktail(
+    'Mojito',
+    {
+        mint: 10,
+        lime_juice: 25,
+        gomme: 25,
+        white_rum: 50,
+        soda: 1 
+    },
+    'Collins',
+    'Mint Sprig',
+    'built',
+    9.00
+)
+mojito.append_cocktail()
 
 
 
