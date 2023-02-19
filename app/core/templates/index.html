@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
 {% block main %}
-<p>Main</p>
+<main class="main__wrapper">
+    <section class="main__header">
+        <h2>Cocktails</h2>
+    </section>
+    <section class="main__cocktails">
+        <p>
+            {{ cocktail_list }}
+        </p>
+    </section>
+</main>
 {% endblock %}

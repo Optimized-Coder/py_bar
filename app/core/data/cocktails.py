@@ -1,5 +1,5 @@
-from models import Cocktail, cocktail_list
-from ingredients import *
+from .models import Cocktail, cocktail_list
+from .ingredients import *
 
 
 # COCKTAIL MODEL

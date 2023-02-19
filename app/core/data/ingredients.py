@@ -1,4 +1,4 @@
-from models import Ingredient, ingredient_list, Spirit
+from .models import Ingredient, ingredient_list, Spirit
 
 # Ingredient Model
 # - name
