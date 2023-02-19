@@ -4,4 +4,7 @@ from . import bp
 @bp.route('/')
 @bp.route('/home/')
 def home():
-    return '<h1>Home</h1>'
+    return render_template(
+        'index.html',
+        title='Cocktails'
+    )
