@@ -7,6 +7,8 @@ def create_app():
     
 
     # define BP's
+    from .main import bp as main_bp
+    app.register_blueprint(main_bp)
 
     # import models
 
