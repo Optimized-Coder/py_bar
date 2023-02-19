@@ -5,10 +5,19 @@
     <section class="main__header">
         <h2>Cocktails</h2>
     </section>
+    <br>
     <section class="main__cocktails">
+        {% for cocktail in cocktail_list %}
+        <h3>
+            {{ cocktail }} --- {{ "$%.2f"|format(cocktail.price)  }}
+        </h3>
         <p>
-            {{ cocktail_list }}
+            {% for ingredient, amount in cocktail.ingredients.items() %}
+            <p>{{ingredient}}: {{amount}} {{ingredient.unit}}</p>
+            {% endfor %}
         </p>
+        <hr>
+        {% endfor %}
     </section>
 </main>
 {% endblock %}
