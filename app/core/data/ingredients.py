@@ -16,7 +16,7 @@ tequila = Spirit(
     17.5,
     'ml',
     700,
-    0.375
+    37.5
 )
 tequila.append_ingredient()
 
@@ -25,7 +25,7 @@ gin = Spirit(
     20,
     'ml',
     700,
-    0.375
+    37.5
 )
 gin.append_ingredient()
 
@@ -34,7 +34,7 @@ cointreau = Spirit(
     12,
     'ml',
     700,
-    0.25
+    25
 )
 cointreau.append_ingredient()
 
@@ -43,7 +43,7 @@ angustura_bitters = Spirit(
     5,
     'dash',
     700,
-    0.35
+    35
 )
 angustura_bitters.append_ingredient()
 
@@ -52,7 +52,7 @@ cherry_liqueur = Spirit(
     15,
     'ml',
     700,
-    0.25
+    25
 )
 cherry_liqueur.append_ingredient()
 
@@ -61,7 +61,7 @@ dom_benedictine = Spirit(
     15,
     'ml',
     700,
-    0.2
+    20
 )
 dom_benedictine.append_ingredient()
 
@@ -70,7 +70,7 @@ white_rum = Spirit(
     18,
     'ml',
     700,
-    0.375
+    37.5
 )
 white_rum.append_ingredient()
 

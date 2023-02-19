@@ -16,6 +16,11 @@
             <p>{{ingredient}}: {{amount}} {{ingredient.unit}}</p>
             {% endfor %}
         </p>
+        <br>
+        <h4>Units:</h4>
+        <p>
+            {{ "%.2f"|format(calculate_units(cocktail))  }}
+        </p>
         <hr>
         {% endfor %}
     </section>
