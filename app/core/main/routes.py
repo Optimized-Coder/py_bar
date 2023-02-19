@@ -1,16 +1,7 @@
 from flask import render_template, url_for
 from . import bp
 from ..data.cocktails import *
-
-def calculate_units(cocktail):
-    total_units = 0
-    for ingredient, amount in cocktail.ingredients.items():
-        if isinstance(ingredient, Spirit):
-            print(ingredient.name, ingredient.ABV)
-            total_units += ingredient.ABV * amount / 1000
-    return total_units
-
-print(calculate_units(mojito))
+from .calc_units import calculate_units
 
 @bp.route('/')
 @bp.route('/home/')

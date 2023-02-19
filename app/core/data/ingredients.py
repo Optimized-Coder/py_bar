@@ -132,6 +132,3 @@ soda = Ingredient(
     1
 )
 
-
-
-print(ingredient_list)
