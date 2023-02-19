@@ -14,7 +14,7 @@ def home():
         'title': 'Menu',
         'cocktail_list': cocktail_list,
         'calculate_units': calculate_units,
-        'calculate_price': calculate_price
+        # 'calculate_price': calculate_price
     }
 
     return render_template(

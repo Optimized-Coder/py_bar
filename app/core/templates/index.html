@@ -7,9 +7,9 @@
     </section>
     <br>
     <section class="main__cocktails">
-        {% for cocktail in cocktail_list %}
+        {% for cocktail in cocktail_list|sort(attribute='name') %}
         <h3>
-            {{ cocktail }} --- {{ "$%.2f"|format(calculate_price(cocktail))  }}
+            {{ cocktail }} --- {{ "$%.2f"|format(cocktail.price)  }}
         </h3>
         <p>
             {% for ingredient, amount in cocktail.ingredients.items() %}

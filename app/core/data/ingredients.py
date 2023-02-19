@@ -8,7 +8,7 @@ from .models import Ingredient, ingredient_list, Spirit
 
 # Spirit() subclass also has Spirit.ABV
 
-# use Ingredient.append_ingredient()  
+# use Spirit.append_ingredient() after creating each instance
 
                     # =========Spirits =========
 tequila = Spirit(
@@ -102,7 +102,7 @@ lillet_blanc = Spirit(
 lillet_blanc.append_ingredient()
 
                     # =========Defualt ingredients =========
-
+# use Ingredient.append_ingredient() after creating each instance
 lime_juice = Ingredient(
     'Lime Juice',
     35,
@@ -150,4 +150,4 @@ soda = Ingredient(
     'dash',
     1
 )
-
+soda.append_ingredient()
