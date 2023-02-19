@@ -4,7 +4,10 @@ from . import bp
 @bp.route('/')
 @bp.route('/home/')
 def home():
+    context = {
+        'title': 'Menu',
+    }
+
     return render_template(
-        'index.html',
-        title='Cocktails'
+        'index.html', **context
     )
