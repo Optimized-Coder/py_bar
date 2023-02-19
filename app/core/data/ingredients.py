@@ -13,66 +13,93 @@ from .models import Ingredient, ingredient_list, Spirit
                     # =========Spirits =========
 tequila = Spirit(
     'Tequila',
-    17.5,
+    20,
     'ml',
     700,
-    37.5
+    38
 )
 tequila.append_ingredient()
 
 gin = Spirit(
     'Gin',
-    20,
+    15.99,
     'ml',
     700,
-    37.5
+    44
 )
 gin.append_ingredient()
 
 cointreau = Spirit(
     'Cointreau',
-    12,
+    16.75,
     'ml',
     700,
-    25
+    40
 )
 cointreau.append_ingredient()
 
 angustura_bitters = Spirit(
     'Angustura Bitters',
-    5,
+    10,
     'dash',
     700,
-    35
+    44.7
 )
 angustura_bitters.append_ingredient()
 
 cherry_liqueur = Spirit(
     'Cherry Liqueur',
-    15,
+    19.9,
     'ml',
     700,
-    25
+    24
 )
 cherry_liqueur.append_ingredient()
 
 dom_benedictine = Spirit(
     'DOM Benedictine',
-    15,
+    18,
     'ml',
     700,
-    20
+    40
 )
 dom_benedictine.append_ingredient()
 
 white_rum = Spirit(
     'White Rum',
-    18,
+    14,
     'ml',
     700,
-    37.5
+    40
 )
 white_rum.append_ingredient()
+
+triple_sec = Spirit(
+    'Triple Sec',
+    15.99,
+    'ml',
+    700,
+    20
+)
+triple_sec.append_ingredient()
+
+vodka = Spirit(
+    'Vodka',
+    13.99,
+    'ml',
+    700,
+    40
+)
+vodka.append_ingredient()
+
+lillet_blanc = Spirit(
+    'Lillet Blanc',
+    18.99,
+    'ml',
+    700,
+    17
+)
+lillet_blanc.append_ingredient()
 
                     # =========Defualt ingredients =========
 
@@ -83,14 +110,6 @@ lime_juice = Ingredient(
     500
 )
 lime_juice.append_ingredient()
-
-triple_sec = Ingredient(
-    'Triple Sec',
-    12,
-    'ml',
-    700
-)
-triple_sec.append_ingredient()
 
 gomme = Ingredient(
     'Gomme',

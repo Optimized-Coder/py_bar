@@ -15,7 +15,7 @@
 }
 
 .header__nav-items {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content:center;
     list-style-type: none;

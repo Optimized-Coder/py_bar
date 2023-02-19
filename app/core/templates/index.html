@@ -9,7 +9,7 @@
     <section class="main__cocktails">
         {% for cocktail in cocktail_list %}
         <h3>
-            {{ cocktail }} --- {{ "$%.2f"|format(cocktail.price)  }}
+            {{ cocktail }} --- {{ "$%.2f"|format(calculate_price(cocktail))  }}
         </h3>
         <p>
             {% for ingredient, amount in cocktail.ingredients.items() %}

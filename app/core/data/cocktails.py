@@ -66,7 +66,19 @@ mojito = Cocktail(
 )
 mojito.append_cocktail()
 
-
+vesper = Cocktail(
+    'Vesper',
+    {
+        vodka: 15,
+        gin: 45,
+        lillet_blanc: 7.5
+    },
+    'Martini',
+    'Lemon Twist',
+    'shaken',
+    8.00   
+)
+vesper.append_cocktail()
 
 
 
