@@ -2,12 +2,10 @@
 # Accepts name, ingredients dict with quantities, glass, garnish, method, price and a description
 cocktail_list = []
 
+# change this to be your desired GP
 gross_profit_margin = 0.75
 
 class Cocktail():
-
-    
-
     def __init__(
         self, name, ingredients, glass, garnish, method
         ):
@@ -17,6 +15,8 @@ class Cocktail():
         self.garnish = garnish
         self.method = method
         self.price = self.calculate_price()
+    
+
     
     def __repr__(self) -> str:
         return self.name
@@ -34,7 +34,8 @@ class Cocktail():
     def calculate_profit(self):
         return self.price * 0.8 - self.calculate_cost()
 
-
+    # uses calculate cost method on cocktail class and disired gp
+    # for dynamic pricing
     def calculate_price(self):
         price = self.calculate_cost() / (1 - gross_profit_margin)
         return round(price, 1)
